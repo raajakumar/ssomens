@@ -2,7 +2,6 @@
 class Product_model extends CI_Model
 {
 
-
     public function save()
     {
         $data = array( 'PRODUCT_ID' => $this->input->post('tb_product_id'),
@@ -12,6 +11,7 @@ class Product_model extends CI_Model
             'PRODUCT_TOTAL_STOCK' => $this->input->post('tb_product_total_stock'),
             'PRODUCT_REMARKS' => $this->input->post('tb_product_remarks'));
              $this->db->insert('product_details',$data);
+             echo "data to be inserted";
     }
     function getProduct_id()
     {
