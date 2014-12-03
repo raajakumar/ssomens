@@ -1,7 +1,6 @@
 <?php
 class Product_model extends CI_Model
 {
-
     public function save()
     {
         $data = array( 'PRODUCT_ID' => $this->input->post('tb_product_id'),
