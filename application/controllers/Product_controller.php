@@ -24,8 +24,6 @@ function __construct()
         {
             $this->product_model->save();
         }
-
-
-    }
+}
 }
 ?>
