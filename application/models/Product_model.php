@@ -11,7 +11,6 @@ class Product_model extends CI_Model
             'PRODUCT_REMARKS' => $this->input->post('tb_product_remarks'));
              $this->db->insert('product_details',$data);
              echo "data to be inserted";
-             
     }
     function getProduct_id()
     {
